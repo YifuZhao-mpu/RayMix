@@ -110,6 +110,16 @@ excluded by `.gitignore`. The JSON results distilled from them are tracked.
 
 Citation details will be added once the manuscript is accepted.
 
+## License
+
+MIT — see [`LICENSE`](LICENSE).
+
+The files under `pointcept_patch/` are written to run inside
+[Pointcept](https://github.com/Pointcept/Pointcept) (MIT, © 2023 Pointcept): the configs follow
+Pointcept's config conventions, and `semantic_kitti_robo3d_label.diff` is a one-line patch
+against upstream source, which stays under its own license. No upstream file is redistributed
+here.
+
 ## Acknowledgements
 
 Built on [Pointcept](https://github.com/Pointcept/Pointcept) (MIT). SemanticPOSS and
