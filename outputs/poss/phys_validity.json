@@ -1,0 +1,11 @@
+{
+  "double_returns": {
+    "polarmix_mean": 18816.7,
+    "raymix_mean": -137.03333333333333
+  },
+  "ground_float": {
+    "real_median": 0.17567932605743408,
+    "polarmix_median": 1.2297992706298828,
+    "raymix_median": 0.24277997016906738
+  }
+}

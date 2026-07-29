@@ -1,0 +1,8 @@
+{
+ "aux": 0,
+ "fuse": 0,
+ "val_mIoU": 0.4089,
+ "val_thing_mIoU": 0.1738,
+ "far30_thing_mIoU": 0.0906,
+ "beam16_mIoU": 0.3457
+}

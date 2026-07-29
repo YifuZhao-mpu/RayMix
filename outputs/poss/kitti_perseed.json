@@ -1,0 +1,263 @@
+{
+ "protocol": {
+  "loop_best": "max per-epoch evaluator val mIoU (reported in all tables)",
+  "test_precise": "test.py precise full-point eval of best checkpoint",
+  "per_class": "from the final test.py per-class block"
+ },
+ "arms_24ep": {
+  "baseline": {
+   "exps": [
+    "kitti_base",
+    "kbaseline_s1",
+    "kbaseline_s2"
+   ],
+   "loop_best_per_seed": [
+    67.98,
+    68.47,
+    69.28
+   ],
+   "loop_best_mean": 68.5767,
+   "test_precise_per_seed": [
+    67.87,
+    68.49,
+    69.25
+   ],
+   "test_precise_mean": 68.5367
+  },
+  "balanced_naive": {
+   "exps": [
+    "kitti_polarmix",
+    "kbalnaive_s1",
+    "kbalnaive_s2"
+   ],
+   "loop_best_per_seed": [
+    69.84,
+    69.14,
+    69.11
+   ],
+   "loop_best_mean": 69.3633,
+   "test_precise_per_seed": [
+    69.79,
+    69.15,
+    69.06
+   ],
+   "test_precise_mean": 69.3333
+  },
+  "raymix_full": {
+   "exps": [
+    "kitti_raymix",
+    "kraymix_s1",
+    "kraymix_s2"
+   ],
+   "loop_best_per_seed": [
+    70.27,
+    69.55,
+    69.87
+   ],
+   "loop_best_mean": 69.8967,
+   "test_precise_per_seed": [
+    70.31,
+    69.47,
+    69.84
+   ],
+   "test_precise_mean": 69.8733
+  }
+ },
+ "paired_delta_per_seed_loop": [
+  0.43,
+  0.41,
+  0.76
+ ],
+ "delta_mean_loop_unrounded": 0.5333,
+ "delta_mean_test_precise": 0.54,
+ "small_classes": {
+  "1": {
+   "balnaive": 54.683,
+   "raymix": 55.263,
+   "delta": 0.58
+  },
+  "2": {
+   "balnaive": 78.317,
+   "raymix": 79.607,
+   "delta": 1.29
+  },
+  "5": {
+   "balnaive": 78.94,
+   "raymix": 79.983,
+   "delta": 1.043
+  },
+  "6": {
+   "balnaive": 89.387,
+   "raymix": 89.5,
+   "delta": 0.113
+  },
+  "7": {
+   "balnaive": 15.187,
+   "raymix": 19.567,
+   "delta": 4.38
+  },
+  "15": {
+   "balnaive": 70.253,
+   "raymix": 70.813,
+   "delta": 0.56
+  },
+  "17": {
+   "balnaive": 63.363,
+   "raymix": 63.4,
+   "delta": 0.037
+  },
+  "18": {
+   "balnaive": 50.92,
+   "raymix": 51.907,
+   "delta": 0.987
+  }
+ },
+ "small_mean_delta": 1.124,
+ "small_n_strictly_up": 8,
+ "small_min_delta": 0.037,
+ "component_ablation_seed0_loop_best": {
+  "balanced_naive": 69.84,
+  "plus_snap": 69.89,
+  "plus_validity": 69.51,
+  "raymix_full": 70.27
+ },
+ "k50ep": {
+  "n_epochs": 50,
+  "balnaive": {
+   "loop_best": 69.61,
+   "test_precise": 69.64
+  },
+  "raymix": {
+   "loop_best": 69.36,
+   "test_precise": 69.27
+  },
+  "delta_loop": -0.25,
+  "delta_test_precise": -0.37,
+  "epochs_raymix_leads_per_epoch": [
+   1,
+   2,
+   4,
+   5,
+   8,
+   10,
+   11,
+   12,
+   16,
+   23,
+   24,
+   26,
+   31,
+   33,
+   34,
+   35,
+   46,
+   48
+  ],
+  "n_lead": 18,
+  "best_so_far_balnaive_permanently_ahead_from_epoch": 13,
+  "balnaive_curve": [
+   41.08,
+   49.6,
+   54.66,
+   58.29,
+   60.79,
+   64.33,
+   65.29,
+   61.77,
+   65.19,
+   65.24,
+   62.4,
+   64.54,
+   67.71,
+   66.57,
+   67.05,
+   66.71,
+   68.23,
+   68.27,
+   67.97,
+   68.11,
+   67.72,
+   69.49,
+   67.58,
+   67.61,
+   68.4,
+   66.7,
+   69.3,
+   69.03,
+   69.47,
+   68.96,
+   67.16,
+   69.2,
+   68.32,
+   68.8,
+   68.93,
+   69.17,
+   68.56,
+   69.39,
+   69.4,
+   69.19,
+   69.61,
+   69.1,
+   69.27,
+   69.1,
+   69.22,
+   69.21,
+   69.38,
+   69.22,
+   69.23,
+   69.34
+  ],
+  "raymix_curve": [
+   42.25,
+   52.02,
+   53.98,
+   59.12,
+   60.83,
+   63.96,
+   64.6,
+   63.44,
+   64.19,
+   65.89,
+   64.09,
+   66.44,
+   67.17,
+   63.96,
+   66.77,
+   67.14,
+   66.2,
+   66.43,
+   66.77,
+   67.86,
+   67.57,
+   67.64,
+   68.48,
+   68.25,
+   67.88,
+   69.0,
+   67.03,
+   67.28,
+   68.81,
+   68.38,
+   69.27,
+   68.98,
+   68.98,
+   68.9,
+   69.02,
+   68.72,
+   68.38,
+   69.09,
+   68.74,
+   68.43,
+   68.72,
+   69.1,
+   68.89,
+   69.06,
+   68.95,
+   69.36,
+   69.21,
+   69.25,
+   69.2,
+   69.21
+  ]
+ }
+}

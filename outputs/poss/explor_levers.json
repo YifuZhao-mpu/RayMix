@@ -1,0 +1,36 @@
+{
+  "note": "Exploratory saturation levers with their GPU config and CONFIG-MATCHED PolarMix references. BN-batch sensitivity means levers must be read only against same-config references.",
+  "ptv3_2gpu": {
+    "miou": 60.86,
+    "batch_per_gpu": 6
+  },
+  "grid04_2gpu": {
+    "miou": 60.55,
+    "batch_per_gpu": 6
+  },
+  "ref_2gpu": "see ref2g_spunet_seq03.json (60.93\u00b10.32)",
+  "schedule_100ep_1gpu": {
+    "s0": 60.66,
+    "s1": 60.25,
+    "batch_per_gpu": 12
+  },
+  "ref_50ep_1gpu": {
+    "s0": 59.98,
+    "s1": 60.33,
+    "batch_per_gpu": 12
+  },
+  "schedule_paired_delta_1gpu": {
+    "s0": 0.68,
+    "s1": -0.08,
+    "sign_changes": true
+  },
+  "polarmix_fullpoint_3seed": {
+    "per_seed": [
+      60.29,
+      60.81,
+      59.67
+    ],
+    "mean_2dp": 60.26,
+    "pstd_2dp": 0.47
+  }
+}

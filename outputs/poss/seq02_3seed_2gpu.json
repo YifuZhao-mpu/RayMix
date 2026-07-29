@@ -1,0 +1,48 @@
+{
+  "base": {
+    "seeds": [
+      57.03,
+      56.43,
+      55.59
+    ],
+    "mean": 56.35,
+    "std": 0.59
+  },
+  "polarmix": {
+    "seeds": [
+      55.79,
+      56.13,
+      55.81
+    ],
+    "mean": 55.91,
+    "std": 0.16
+  },
+  "raymix": {
+    "seeds": [
+      58.11,
+      56.51,
+      56.43
+    ],
+    "mean": 57.02,
+    "std": 0.77
+  },
+  "polarmix_minus_base": {
+    "per_seed": [
+      -1.24,
+      -0.3,
+      0.22
+    ],
+    "mean": -0.44
+  },
+  "raymix_minus_base": {
+    "per_seed": [
+      1.08,
+      0.08,
+      0.84
+    ],
+    "mean": 0.67
+  },
+  "FRNet_prior": 53.5,
+  "config": "2xGPU DDP (batch 6/GPU, global 12), NCCL_P2P_DISABLE=1, GPUs 4,5",
+  "note": "AUTHORITATIVE seq02 (FRNet protocol) 3-seed, internally consistent config. Replaces both the mislabeled single-seed 58.52 (4-GPU, no-mixing) and the 1-GPU 3-seed sweep (BN-batch confound)."
+}

@@ -1,0 +1,46 @@
+{
+ "protocol": "test.py precise full-point eval of best checkpoint, per seed",
+ "arms": {
+  "baseline": {
+   "per_seed": [
+    57.11,
+    57.77,
+    56.94
+   ],
+   "mean": 57.2733
+  },
+  "polarmix": {
+   "per_seed": [
+    60.29,
+    60.81,
+    59.67
+   ],
+   "mean": 60.2567
+  },
+  "balanced_naive": {
+   "per_seed": [
+    60.12,
+    60.28,
+    59.29
+   ],
+   "mean": 59.8967
+  },
+  "raymix_full": {
+   "per_seed": [
+    59.93,
+    59.83,
+    60.01
+   ],
+   "mean": 59.9233
+  },
+  "vol_x3": {
+   "per_seed": [
+    60.44,
+    61.62,
+    60.73
+   ],
+   "mean": 60.93
+  }
+ },
+ "delta_raymix_minus_balnaive_precise": 0.0266
+}

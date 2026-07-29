@@ -1,0 +1,24 @@
+{
+ "best_val_mIoU": 0.5818,
+ "final_TTA_mIoU": 0.5761,
+ "final_mAcc": 0.7337,
+ "final_allAcc": 0.8458,
+ "per_class": {
+  "people": 0.6782,
+  "rider": 0.5753,
+  "car": 0.6149,
+  "trunk": 0.5688,
+  "plants": 0.7589,
+  "traffic-sign": 0.4666,
+  "pole": 0.392,
+  "trashcan": 0.4023,
+  "building": 0.7104,
+  "cone-stone": 0.3459,
+  "fence": 0.5555,
+  "bike": 0.5946,
+  "ground": 0.8257
+ },
+ "FRNet_SOTA": 0.535,
+ "delta_best_vs_FRNet": 0.0468,
+ "delta_TTA_vs_FRNet": 0.0411
+}

@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Run logs and process artifacts.
+# Every number in the paper is machine-printed into outputs/**/*.json, which IS tracked;
+# the raw train.log files behind them are hundreds of MB and are not.
+*.log
+*.out
+*.pid
+
+# Large training artifacts — never commit
+*.npz
+*.pth
+*.ckpt
+*.pkl
+exp/
+data/

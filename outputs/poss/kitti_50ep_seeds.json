@@ -1,0 +1,53 @@
+{
+ "note": "seed0 trained on 3 GPUs (pre-constraint), seeds 1,2 on GPU1 only; batch_size global=12 identical; within-seed pairs (balnaive vs raymix) share hardware so paired deltas are clean",
+ "go_no_go": "Codex path-B: GO (negative thesis holds) iff mean(RayMix-balnaive) loop_best <= +0.25 OR signs mixed; NO-GO (rewrite, do not submit) iff RayMix beats balnaive on all 3 seeds AND mean >= +0.30",
+ "balnaive": {
+  "0": {
+   "loop_best": 69.61,
+   "test_precise": 69.64,
+   "n_evals": 50
+  },
+  "1": {
+   "loop_best": 69.75,
+   "test_precise": 69.77,
+   "n_evals": 50
+  },
+  "2": {
+   "loop_best": 69.81,
+   "test_precise": 69.78,
+   "n_evals": 50
+  }
+ },
+ "raymix": {
+  "0": {
+   "loop_best": 69.36,
+   "test_precise": 69.27,
+   "n_evals": 50
+  },
+  "1": {
+   "loop_best": 69.85,
+   "test_precise": 69.84,
+   "n_evals": 50
+  },
+  "2": {
+   "loop_best": 69.13,
+   "test_precise": 69.04,
+   "n_evals": 50
+  }
+ },
+ "paired_delta_loop": [
+  -0.25,
+  0.1,
+  -0.68
+ ],
+ "balnaive_mean": 69.7233,
+ "raymix_mean": 69.4467,
+ "delta_mean_loop": -0.2766,
+ "paired_delta_test_precise": [
+  -0.37,
+  0.07,
+  -0.74
+ ],
+ "delta_mean_test_precise": -0.3467,
+ "verdict": "GO (negative thesis holds)"
+}

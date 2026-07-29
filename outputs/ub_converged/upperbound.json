@@ -1,0 +1,44 @@
+{
+ "B_single": {
+  "all": 0.6286,
+  "thing": 0.591,
+  "rs": 0.2345,
+  "rs_sup01": 0.1371,
+  "rs_sup24": 0.2423,
+  "rs_sup5p": 0.0,
+  "rs_near": 0.2531,
+  "rs_far": 0.2346
+ },
+ "T_single": {
+  "all": 0.5733,
+  "thing": 0.5102,
+  "rs": 0.1337,
+  "rs_sup01": 0.0954,
+  "rs_sup24": 0.1376,
+  "rs_sup5p": 0.0,
+  "rs_near": 0.2316,
+  "rs_far": 0.1307
+ },
+ "T_accum": {
+  "all": 0.6387,
+  "thing": 0.5892,
+  "rs": 0.3907,
+  "rs_sup01": 0.2331,
+  "rs_sup24": 0.4052,
+  "rs_sup5p": 0.0,
+  "rs_near": 0.4596,
+  "rs_far": 0.386
+ },
+ "rs_thing_count": 15303,
+ "splits_pp": {
+  "total_headroom": 15.62,
+  "needs_inference_evidence": 25.7,
+  "distillation_transferable": -10.08
+ },
+ "distill_transferable_CI95_pp": [
+  -10.89,
+  -7.5
+ ],
+ "bin24_total_gain_pp": 16.29,
+ "GATE": "AMBIGUOUS"
+}

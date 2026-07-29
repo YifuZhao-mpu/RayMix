@@ -1,0 +1,12 @@
+diff --git a/pointcept/datasets/semantic_kitti.py b/pointcept/datasets/semantic_kitti.py
+index cd1354f..a4effb6 100644
+--- a/pointcept/datasets/semantic_kitti.py
++++ b/pointcept/datasets/semantic_kitti.py
+@@ -82,6 +82,7 @@ class SemanticKITTIDataset(DefaultDataset):
+         learning_map = {
+             0: ignore_index,  # "unlabeled"
+             1: ignore_index,  # "outlier" mapped to "unlabeled" --------------------------mapped
++            23: ignore_index,  # crosstalk noise marker (Robo3D SemanticKITTI-C) ----------mapped
+             10: 0,  # "car"
+             11: 1,  # "bicycle"
+             13: 4,  # "bus" mapped to "other-vehicle" --------------------------mapped

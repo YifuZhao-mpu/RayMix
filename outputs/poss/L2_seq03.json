@@ -1,0 +1,49 @@
+{
+  "protocol": "seq03 val (PolarMix/SemanticPOSS-orig protocol)",
+  "sota_ref": {
+    "name": "PolarMix (SPVCNN+PolarMix, NeurIPS22)",
+    "miou": 0.586
+  },
+  "baseline_spunet": {
+    "best_val_miou": 0.5859,
+    "final_test_miou": 0.5711,
+    "per_class_iou": {
+      "people": 70.0,
+      "rider": 61.8,
+      "car": 55.1,
+      "trunk": 47.7,
+      "plants": 76.8,
+      "traffic-sign": 45.5,
+      "pole": 33.1,
+      "trashcan": 28.0,
+      "building": 73.2,
+      "cone-stone": 50.1,
+      "fence": 60.8,
+      "bike": 59.2,
+      "ground": 81.1
+    }
+  },
+  "spunet_polarmix": {
+    "best_val_miou": 0.6088,
+    "final_test_miou": 0.6029,
+    "per_class_iou": {
+      "people": 70.3,
+      "rider": 65.8,
+      "car": 75.5,
+      "trunk": 51.0,
+      "plants": 75.8,
+      "traffic-sign": 47.7,
+      "pole": 36.4,
+      "trashcan": 37.7,
+      "building": 73.7,
+      "cone-stone": 44.5,
+      "fence": 65.5,
+      "bike": 58.9,
+      "ground": 81.0
+    }
+  },
+  "polarmix_gain_pp": 2.29,
+  "beat_vs_sota_pp": 2.28,
+  "clears_sota": true,
+  "note": "best_val_miou = canonical (full-point val, matches literature). Beat is via stronger backbone+recipe+existing PolarMix, NOT a novel method. L3 mechanism still required for defensible contribution."
+}

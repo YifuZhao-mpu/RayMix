@@ -1,0 +1,24 @@
+{
+  "arch": "SPVCNN+PolarMix (our recipe, 2-GPU)",
+  "seeds": [
+    58.87,
+    57.29,
+    56.18
+  ],
+  "mean": 57.45,
+  "std": 1.1,
+  "prior_reported": 58.6,
+  "matched_pair_spunet_2gpu": {
+    "arch": "SpUNet+PolarMix seq03 (2-GPU reference)",
+    "seeds": [
+      61.29,
+      60.52,
+      60.99
+    ],
+    "mean": 60.93,
+    "std": 0.32,
+    "four_gpu_reference": 60.95,
+    "note": "2-GPU arm of the SPVCNN-vs-SpUNet matched pair; also calibrates 2-GPU vs 4-GPU config offset."
+  },
+  "note": "Matched-codebase/matched-config backbone pair: compare to SpUNet+PolarMix 2-GPU 60.93\u00b10.32. mean ~60-61 => recipe-driven beat; ~58.6 => backbone matters."
+}

@@ -1,0 +1,13 @@
+{
+  "arch": "SPVCNN+PolarMix (our recipe)",
+  "seeds": [
+    null,
+    null,
+    null
+  ],
+  "mean": null,
+  "std": 0.0,
+  "prior_reported": 58.6,
+  "ours_spunet_polarmix": 60.95,
+  "note": "mean ~60-61 => beat is recipe-driven (prior 58.6 under-tuned), matched-condition win; mean ~58.6 => SpUNet backbone matters."
+}

@@ -1,0 +1,10 @@
+{
+ "baseline": {
+  "thing_mIoU": 0.136,
+  "RS_thing_mIoU": 0.1239
+ },
+ "teacher": {
+  "thing_mIoU": 0.2037,
+  "RS_thing_mIoU": 0.1266
+ }
+}

@@ -1,0 +1,70 @@
+{
+  "note": "seq02 checkpoint-rule robustness, three rules: best-val (headline; per-epoch grid val), final-epoch (epoch-50 grid val, extracted BEFORE the in-log PreciseEvaluator section), full-point (test.py on best-val ckpt; independently re-run 2026-07-04 and bit-identical to the train-time PreciseEvaluator output). FRNet prior = 53.5.",
+  "FRNet_prior": 53.5,
+  "base": {
+    "best_val": [
+      57.03,
+      56.43,
+      55.59
+    ],
+    "best_val_mean": 56.35,
+    "final_epoch": [
+      55.79,
+      54.71,
+      54.72
+    ],
+    "final_epoch_mean": 55.07,
+    "fullpoint_best_ckpt": [
+      55.77,
+      55.26,
+      54.47
+    ],
+    "fullpoint_mean": 55.17,
+    "fullpoint_pstd": 0.53
+  },
+  "polarmix": {
+    "best_val": [
+      55.79,
+      56.13,
+      55.81
+    ],
+    "best_val_mean": 55.91,
+    "final_epoch": [
+      55.22,
+      54.87,
+      54.9
+    ],
+    "final_epoch_mean": 55.0,
+    "fullpoint_best_ckpt": [
+      54.43,
+      55.11,
+      54.52
+    ],
+    "fullpoint_mean": 54.69,
+    "fullpoint_pstd": 0.3
+  },
+  "raymix": {
+    "best_val": [
+      58.11,
+      56.51,
+      56.43
+    ],
+    "best_val_mean": 57.02,
+    "final_epoch": [
+      56.13,
+      55.61,
+      55.64
+    ],
+    "final_epoch_mean": 55.79,
+    "fullpoint_best_ckpt": [
+      56.54,
+      55.81,
+      55.37
+    ],
+    "fullpoint_mean": 55.91,
+    "fullpoint_pstd": 0.48
+  },
+  "base_final_epoch_margin_vs_FRNet": 1.57,
+  "base_fullpoint_margin_vs_FRNet": 1.67,
+  "min_value_any_arm_any_rule": 54.43
+}

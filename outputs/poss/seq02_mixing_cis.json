@@ -1,0 +1,34 @@
+{
+  "method": "paired t-based 95% CI, n=3 seeds, df=2, t*=4.302653 (matches paper_stats.json)",
+  "source": "seq02_3seed_2gpu.json",
+  "polarmix_minus_base": {
+    "per_seed": [
+      -1.24,
+      -0.3,
+      0.22
+    ],
+    "mean_2dp": -0.44,
+    "ci95_2dp": [
+      -2.28,
+      1.4
+    ],
+    "ci_includes_0": true
+  },
+  "raymix_minus_base": {
+    "per_seed": [
+      1.08,
+      0.08,
+      0.84
+    ],
+    "mean_2dp": 0.67,
+    "ci95_2dp": [
+      -0.63,
+      1.96
+    ],
+    "ci_includes_0": true
+  },
+  "base_vs_FRNet_pp": 2.85,
+  "polarmix_vs_FRNet_pp": 2.41,
+  "raymix_vs_FRNet_pp": 3.52,
+  "base_worst_seed_vs_FRNet_pp": 2.09
+}

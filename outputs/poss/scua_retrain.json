@@ -1,0 +1,74 @@
+{
+ "config": "single-GPU, per-device batch 12, 50 ep, seeds {0,1,2}; all arms BN-consistent",
+ "published_1gpu_50ep_polarmix_refs": [
+  59.98,
+  60.33
+ ],
+ "arms": {
+  "base": {
+   "seeds": [
+    57.36,
+    58.64,
+    57.77
+   ],
+   "mean": 57.92,
+   "std": 0.53
+  },
+  "polarmix": {
+   "seeds": [
+    60.11,
+    60.76,
+    60.15
+   ],
+   "mean": 60.34,
+   "std": 0.3
+  },
+  "raymix": {
+   "seeds": [
+    59.89,
+    59.76,
+    60.75
+   ],
+   "mean": 60.13,
+   "std": 0.44
+  }
+ },
+ "contrasts": {
+  "polarmix_minus_base": {
+   "per_seed": [
+    2.75,
+    2.12,
+    2.38
+   ],
+   "mean": 2.42,
+   "ci95": [
+    1.63,
+    3.2
+   ]
+  },
+  "raymix_minus_polarmix": {
+   "per_seed": [
+    -0.22,
+    -1.0,
+    0.6
+   ],
+   "mean": -0.21,
+   "ci95": [
+    -2.19,
+    1.78
+   ]
+  },
+  "raymix_minus_base": {
+   "per_seed": [
+    2.53,
+    1.12,
+    2.98
+   ],
+   "mean": 2.21,
+   "ci95": [
+    -0.2,
+    4.62
+   ]
+  }
+ }
+}

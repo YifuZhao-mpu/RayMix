@@ -1,0 +1,60 @@
+{
+  "arms": {
+    "baseline": {
+      "mean": 58.53,
+      "std": 0.23,
+      "seeds": [
+        58.59,
+        58.78,
+        58.23
+      ]
+    },
+    "PolarMix": {
+      "mean": 60.95,
+      "std": 0.39,
+      "seeds": [
+        60.88,
+        61.46,
+        60.51
+      ]
+    },
+    "balanced-naive": {
+      "mean": 61.0,
+      "std": 0.28,
+      "seeds": [
+        60.95,
+        61.37,
+        60.68
+      ]
+    },
+    "RayMix-full": {
+      "mean": 61.0,
+      "std": 0.11,
+      "seeds": [
+        60.94,
+        61.16,
+        60.9
+      ]
+    },
+    "vol_x3": {
+      "mean": 61.86,
+      "std": 0.38,
+      "seeds": [
+        61.4,
+        62.32,
+        61.86
+      ]
+    }
+  },
+  "controls": {
+    "balanced-naive instonly": 61.19,
+    "scene-swap-only": 59.87,
+    "RayMix instonly": 60.68
+  },
+  "seq02_OBSOLETE": {
+    "base": 58.14,
+    "PolarMix": 56.26,
+    "RayMix": 57.5,
+    "_OBSOLETE": "Superseded single-seed 1-GPU exploratory values; DO NOT CITE. Authoritative seq02 (FRNet protocol) 3-seed 2-GPU results live in seq02_3seed_2gpu.json (base 56.35, PolarMix 55.91, RayMix 57.02). Retained only for provenance/audit trail."
+  }
+}

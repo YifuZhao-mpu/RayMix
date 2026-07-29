@@ -1,0 +1,38 @@
+{
+ "note": "balanced-naive (RayMix pipeline, physics OFF) @ volume_mult=3, seq03, 4-GPU (CUDA 1,2,3,6) \u2014 MATCHED to RayMix vol_x3. Closes P_5 / ARIS-2026-07-13 vol_x3 gap.",
+ "config": "4xGPU DDP, batch 3/GPU global 12, RM config + snap_ground/validity/use_ray_merge=False + volume_mult=3",
+ "balnaive_vol3_seeds": [
+  62.21,
+  61.25,
+  62.01
+ ],
+ "balnaive_vol3_mean": 61.82,
+ "balnaive_vol3_std": 0.41,
+ "raymix_vol3_mean": 61.86,
+ "raymix_vol3_std": 0.38,
+ "raymix_vol3_seeds": [
+  61.4,
+  62.32,
+  61.86
+ ],
+ "delta_raymix_minus_balnaive_vol3": 0.04,
+ "vol1_refs": {
+  "balanced-naive": 61.0,
+  "RayMix-full": 61.0,
+  "PolarMix": 60.95
+ },
+ "paired_raymix_minus_balnaive_vol3": {
+  "per_seed": [
+   -0.81,
+   1.07,
+   -0.15
+  ],
+  "mean_2dp": 0.04,
+  "ci95_2dp": [
+   -2.33,
+   2.41
+  ],
+  "ci_includes_0": true,
+  "method": "paired t, n=3, df=2, t*=4.302653, sample SD"
+ }
+}

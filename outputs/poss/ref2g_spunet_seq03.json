@@ -1,0 +1,12 @@
+{
+  "arch": "SpUNet+PolarMix seq03 (2-GPU reference)",
+  "seeds": [
+    61.29,
+    60.52,
+    60.99
+  ],
+  "mean": 60.93,
+  "std": 0.32,
+  "four_gpu_reference": 60.95,
+  "note": "2-GPU arm of the SPVCNN-vs-SpUNet matched pair; also calibrates 2-GPU vs 4-GPU config offset."
+}

@@ -1,0 +1,9 @@
+{
+ "baseline_overall": 0.6286,
+ "baseline_RS_thing": 0.2345,
+ "kd_overall": 0.6251,
+ "kd_RS_thing": 0.1796,
+ "d_RS_thing_pp": -5.49,
+ "d_overall_pp": -0.35,
+ "GO": false
+}

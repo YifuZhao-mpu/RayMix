@@ -1,0 +1,16 @@
+{
+  "polarmix": [
+    60.88,
+    61.46,
+    60.51
+  ],
+  "raymix": [
+    60.94,
+    61.16,
+    60.9
+  ],
+  "polarmix_mean": 60.95,
+  "raymix_mean": 61.0,
+  "delta_pp": 0.05,
+  "tie": true
+}

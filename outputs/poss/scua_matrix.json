@@ -1,0 +1,259 @@
+{
+ "t_crit": 4.302653,
+ "rows": [
+  {
+   "label": "PolarMix on vs. off (sequence 03)",
+   "moves": "E+Q+P",
+   "protocol": "seq03",
+   "c": {
+    "mean": 2.42,
+    "ci": [
+     1.85,
+     2.98
+    ],
+    "per_seed": [
+     2.29,
+     2.68,
+     2.28
+    ]
+   },
+   "infer": "everything moves at once: the composite augmentation effect"
+  },
+  {
+   "label": "PolarMix on vs. off (sequence 02)",
+   "moves": "E+Q+P",
+   "protocol": "seq02",
+   "c": {
+    "mean": -0.44,
+    "ci": [
+     -2.28,
+     1.4
+    ],
+    "per_seed": [
+     -1.24,
+     -0.3,
+     0.22
+    ]
+   },
+   "infer": "protocol sensitivity: the same composite effect, other protocol"
+  },
+  {
+   "label": "RayMix vs. balanced-naive (sequence 03, 1x)",
+   "moves": "P",
+   "protocol": "seq03",
+   "c": {
+    "mean": -0.0,
+    "ci": [
+     -0.53,
+     0.53
+    ],
+    "per_seed": [
+     -0.01,
+     -0.21,
+     0.22
+    ]
+   },
+   "infer": "marginal effect of sensor consistency at matched exposure+dose"
+  },
+  {
+   "label": "RayMix vs. balanced-naive (sequence 03, 3x)",
+   "moves": "P",
+   "protocol": "seq03",
+   "c": {
+    "mean": 0.04,
+    "ci": [
+     -2.33,
+     2.41
+    ],
+    "per_seed": [
+     -0.81,
+     1.07,
+     -0.15
+    ]
+   },
+   "infer": "same marginal effect at the higher dose operating point"
+  },
+  {
+   "label": "RayMix vs. balanced-naive (KITTI, 50 ep)",
+   "moves": "P",
+   "protocol": "KITTI",
+   "c": {
+    "mean": -0.28,
+    "ci": [
+     -1.25,
+     0.69
+    ],
+    "per_seed": [
+     -0.25,
+     0.1,
+     -0.68
+    ]
+   },
+   "infer": "cross-sensor replication of the consistency contrast, converged"
+  },
+  {
+   "label": "Balanced-naive vs. PolarMix (sequence 03)",
+   "moves": "E",
+   "protocol": "seq03",
+   "c": {
+    "mean": 0.05,
+    "ci": [
+     -0.28,
+     0.38
+    ],
+    "per_seed": [
+     0.07,
+     -0.09,
+     0.17
+    ]
+   },
+   "infer": "class-exposure balancing at matched (absent) physics"
+  },
+  {
+   "label": "RayMix 3x vs. 1x paste volume (sequence 03)",
+   "moves": "Q",
+   "protocol": "seq03",
+   "c": {
+    "mean": 0.86,
+    "ci": [
+     -0.04,
+     1.76
+    ],
+    "per_seed": [
+     0.46,
+     1.16,
+     0.96
+    ]
+   },
+   "infer": "augmentation dose at matched physics+exposure policy"
+  },
+  {
+   "label": "RayMix vs. balanced-naive (KITTI, 24 ep)",
+   "moves": "P|H",
+   "protocol": "KITTI",
+   "c": {
+    "mean": 0.53,
+    "ci": [
+     0.05,
+     1.02
+    ],
+    "per_seed": [
+     0.43,
+     0.41,
+     0.76
+    ]
+   },
+   "infer": "short-schedule reversal: why convergence control (H) is mandatory"
+  }
+ ],
+ "residuals_poss": {
+  "naive_x3": {
+   "vis": 8781.696427691675,
+   "vis_ci": [
+    8742.272523045296,
+    8821.075060088917
+   ],
+   "behind": 0.6618743571496657,
+   "behind_ci": [
+    0.6359532741276478,
+    0.6867493416462351
+   ],
+   "w": 0.5682472779467616,
+   "w_ci": [
+    0.5274640279570432,
+    0.6140667274299931
+   ],
+   "samp": 0.6040713236688608,
+   "samp_ci": [
+    0.570315724756755,
+    0.6280312226130418
+   ]
+  },
+  "balanced_naive": {
+   "vis": 8744.713940088252,
+   "vis_ci": [
+    8687.915467047826,
+    8799.14436767047
+   ],
+   "behind": 0.6619178087260259,
+   "behind_ci": [
+    0.6307470398601189,
+    0.6884622207533734
+   ],
+   "w": 0.447278143838048,
+   "w_ci": [
+    0.4034388109465322,
+    0.4943616826713069
+   ],
+   "samp": 0.6040713236688608,
+   "samp_ci": [
+    0.570315724756755,
+    0.6280312226130418
+   ]
+  },
+  "raymix": {
+   "vis": 782.9662006748861,
+   "vis_ci": [
+    688.2293805323492,
+    882.8573180113816
+   ],
+   "behind": 0.037541056227844885,
+   "behind_ci": [
+    0.030894178462015465,
+    0.04451383492001061
+   ],
+   "w": 0.04980710782598677,
+   "w_ci": [
+    0.03645422197672362,
+    0.07665492136021981
+   ],
+   "samp": 0.62148837674627,
+   "samp_ci": [
+    0.5849625007211561,
+    0.6564028241226159
+   ]
+  }
+ },
+ "floors_poss": {
+  "vis": 153.49401129579115,
+  "samp": 0.6347155359182564
+ },
+ "verdicts_poss": {
+  "ground_monotone_under_lift": true,
+  "lift_ladder": [
+   0.14066624641418457,
+   0.44066622853279114,
+   0.7406662702560425,
+   1.3406662940979004
+  ],
+  "visibility_responds_to_nozbuf": true,
+  "sampling_monotone_under_shift": true,
+  "shift_ladder": [
+   0.62148837674627,
+   1.0216950710993187,
+   1.373458395527444
+  ],
+  "specificity_lift_does_not_move_vis": true,
+  "specificity_shift_does_not_move_ground": true,
+  "specificity_nozbuf_does_not_move_sampling": true
+ },
+ "verdicts_kitti": {
+  "ground_monotone_under_lift": true,
+  "lift_ladder": [
+   0.060140907764434814,
+   0.36014097929000854,
+   0.6601409316062927,
+   1.2601409554481506
+  ],
+  "visibility_responds_to_nozbuf": true,
+  "sampling_monotone_under_shift": true,
+  "shift_ladder": [
+   0.6930612621823773,
+   1.5262343263823386,
+   2.6201519291834563
+  ],
+  "specificity_lift_does_not_move_vis": true,
+  "specificity_shift_does_not_move_ground": true,
+  "specificity_nozbuf_does_not_move_sampling": true
+ }
+}
